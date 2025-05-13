@@ -5,6 +5,7 @@
 from modules.rag_engine import retrieve_context
 
 while True:
+
     query = input("\n❓ Ask something (or type 'exit'): ")
     if query.lower() == "exit":
         break
