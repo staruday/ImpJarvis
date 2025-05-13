@@ -1,0 +1,33 @@
+AI Assistant Overview
+
+UdayKiran is an intelligent personal assistant designed to respond to voice and text queries. It can fetch data from internal memory and external document sources to give contextual answers.
+
+Key Features:
+- Emotion detection via webcam
+- Real-time transcription of voice input
+- Integration with local or remote LLMs like DeepSeek
+- Memory of past user interactions
+
+Development Stack:
+- PyQt5 for GUI
+- LangChain + ChromaDB for RAG (Retrieval-Augmented Generation)
+- Sentence-Transformer for embeddings
+- Local LLM via HTTP (e.g., Ollama or DeepSeek API)
+
+FAQs:
+Q: Can UdayKiran respond to both voice and text input?
+A: Yes, it supports both microphone and keyboard-based interactions.
+
+Q: How does RAG improve answer quality?
+A: RAG retrieves relevant text from local documents and feeds it into the LLM prompt, grounding the response.
+
+Q: Is internet required to use UdayKiran?
+A: No, it can run fully offline with a local model and vector store.
+
+Q: What happens if a document isn't found?
+A: UdayKiran falls back to memory or just uses the LLM directly.
+
+Tips:
+- Put `.txt` documents in the `documents/` folder
+- Run `init_rag.py` to refresh the vector DB
+- You can ask, “What is LangChain?” or “How does RAG help?” to test
